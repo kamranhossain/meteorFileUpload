@@ -6,11 +6,11 @@ Slingshot.fileRestrictions("myImageUploads", {
 });
 
 Slingshot.createDirective("myImageUploads", Slingshot.S3Storage, {
-    AWSAccessKeyId: "AKIAI4MEOFZJXDSPMVGA",
-    AWSSecretAccessKey: "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",
-    bucket: "sapien-post-images",
+    AWSAccessKeyId: "Key puts here",
+    AWSSecretAccessKey: "Key puts here",
+    bucket: "Bucket Name puts here",
     acl: "public-read",
-    region: "us-west-2",
+    region: "region name puts in here",
 
     authorize: function () {
         if (!this.userId) {
